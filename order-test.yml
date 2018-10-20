@@ -11,3 +11,6 @@ spring:
 env:
   test5
 
+girl:
+  name: lili
+  age: 18
