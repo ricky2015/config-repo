@@ -5,18 +5,25 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: q1w2e3r4
-    url: jdbc:mysql://127.0.0.1/SpringCloud_Sell?characterEncoding=utf-8&useSSL=false
-  jpa:
-    show-sql: true
-  rebbitmp:
-    host: localhost
+    url: jdbc:mysql://127.0.0.1:3306/SpringCloud_Sell?characterEncoding=utf-8&useSSL=false
+  rabbitmq:
+    host: 127.0.0.1
     port: 5672
     username: guest
     password: guest
-    
+  redis:
+    host: 127.0.0.1
+    port: 6379
 env:
-  test7
-
+  test13
 girl:
-  name: lili
-  age: 254
+  name: mo
+  age: 17
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: basic
+~                           
